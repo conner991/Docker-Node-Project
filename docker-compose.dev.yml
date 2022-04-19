@@ -10,4 +10,11 @@ services:
       - /app/node_modules
     environment:
       - NODE_ENV=development
+      - MONGO_USER=connerf
+      - MONGO_PASSWORD=pw123
     command: npm run-script dev
+  mongo:
+      environment:
+      - MONGO_INITDB_ROOT_USERNAME=connerf
+      - MONGO_INITDB_ROOT_PASSWORD=pw123
+      
