@@ -12,7 +12,9 @@ services:
       - NODE_ENV=development
       - MONGO_USER=connerf
       - MONGO_PASSWORD=pw123
+      - SESSION_SECRET=secret
     command: npm run-script dev
+
   mongo:
       environment:
       - MONGO_INITDB_ROOT_USERNAME=connerf
