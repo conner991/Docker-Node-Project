@@ -35,14 +35,14 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
     httpOnly: true,
-    maxAge: 300000
+    maxAge: 80000,
   }
 }))
 
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("<h2>Hey there!!!<h2>");
+  res.send("<h2>Hey there!!! we workin?<h2>");
 });
 
 
